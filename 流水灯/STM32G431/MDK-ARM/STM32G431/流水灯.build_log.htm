@@ -1,0 +1,79 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.37.0.0
+Copyright (C) 2022 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: 1 Administrator, 1, LIC=JL28G-V9STD-II75V-PNF17-YRS78-8JXFE
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.37.0.0
+Toolchain Path:  D:\Keil\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.18
+Assembler:       Armasm.exe V6.18
+Linker/Locator:  ArmLink.exe V6.18
+Library Manager: ArmAr.exe V6.18
+Hex Converter:   FromElf.exe V6.18
+CPU DLL:         SARMCM3.DLL V5.37.0.0
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.9.0
+Dialog DLL:      TCM.DLL V1.56.1.0
+ 
+<h2>Project:</h2>
+C:\Users\Administrator\Desktop\任务三版本\流水灯\STM32G431\MDK-ARM\STM32G431.uvprojx
+Project File Date:  06/04/2024
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.18', folder: 'D:\Keil\ARM\ARMCLANG\Bin'
+Build target 'STM32G431'
+../Src/main.c(84): warning: implicit declaration of function 'LED_Init' is invalid in C99 [-Wimplicit-function-declaration]
+        LED_Init();
+        ^
+../Src/main.c(90): warning: implicit declaration of function 'OLED_Init' is invalid in C99 [-Wimplicit-function-declaration]
+        OLED_Init();     //OLED<B3><F5>始<BB><AF>  
+        ^
+../Src/main.c(91): warning: implicit declaration of function 'OLED_Clear' is invalid in C99 [-Wimplicit-function-declaration]
+        OLED_Clear();//<C7><E5><C6><C1>
+        ^
+../Src/main.c(93): warning: implicit declaration of function 'OLED_ShowCHinese' is invalid in C99 [-Wimplicit-function-declaration]
+                OLED_ShowCHinese(8,0,0);
+                ^
+../Src/main.c(96): warning: implicit declaration of function 'OLED_ShowString' is invalid in C99 [-Wimplicit-function-declaration]
+                OLED_ShowString(40,0,"1211");
+                ^
+../Src/main.c(123): warning: implicit declaration of function 'OLED_ShowNum' is invalid in C99 [-Wimplicit-function-declaration]
+     OLED_ShowNum(0,6,direction,3,16);
+     ^
+6 warnings generated.
+compiling main.c...
+linking...
+Program Size: Code=8590 RO-data=2042 RW-data=172 ZI-data=1108  
+FromELF: creating hex file...
+"STM32G431\流水灯.axf" - 0 Error(s), 6 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.9.0.pack
+                ARM.CMSIS.5.9.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.6.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32G4xx_DFP.1.1.0.pack
+                Keil.STM32G4xx_DFP.1.1.0
+                STMicroelectronics STM32G4 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/_STM32G431
+  D:/Keil/Pack/ARM/CMSIS/5.9.0/CMSIS/Core/Include
+  D:/Keil/Pack/Keil/STM32G4xx_DFP/1.1.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.6.0
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>

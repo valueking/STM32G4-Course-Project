@@ -1,0 +1,10 @@
+solution:
+  created-by: uv2csolution@1.4.0
+  created-for: CMSIS-Toolbox@2.3.0
+  compiler: AC6
+  target-types:
+    - type: STM32G431
+      device: STM32G431CBTx
+      optimize: debug
+  projects:
+    - project: STM32G431.cproject.yml
